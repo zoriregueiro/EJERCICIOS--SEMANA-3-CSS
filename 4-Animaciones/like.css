@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+button {
+  width: 8rem;
+  height: 8rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+svg {
+  fill: rgb(166, 146, 146);
+}
+
+svg.like {
+  fill: rgb(211, 48, 48);
+  animation: like 0.5s;
+}
+
+@keyframes like {
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.2);
+  }
+}
